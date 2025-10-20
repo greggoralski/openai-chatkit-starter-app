@@ -304,7 +304,7 @@ export function ChatKitPanel({
           return { success: true };
         }
         processedFacts.current.add(id);
-        void onWidgetAction({
+        void onWidgetAction({    
           type: "save",   
           factId: id,
           factText: text.replace(/\s+/g, " ").trim(),
